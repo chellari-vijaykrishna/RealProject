@@ -49,6 +49,7 @@ public class IPlanMgmtServiceImpl implements IPlanMgmtService {
 	@Override
 	public List<PlansEntity> showPlan() {
 		List<PlansEntity> plan = planRepo.findAll();
+		System.out.println("");
 		return plan;
 	}
 
