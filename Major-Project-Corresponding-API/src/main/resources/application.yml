@@ -1,0 +1,29 @@
+spring:
+  config:
+    import: optional:configserver:http://localhost:8888
+
+  application:
+    name: Major-Project-Corresponding-API
+
+  mail:
+    host: smtp.gmail.com
+    username: vijaykrishnach268@gmail.com
+    password: vrcl zcip yfyo ongr
+    properties:
+      mail:
+        transport:
+          protocol: smtp
+        smtp:
+          port: 587
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+
+server:
+  port: 7075
