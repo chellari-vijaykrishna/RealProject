@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: Major-Project-AdminServer
+server:
+   port: 9999
