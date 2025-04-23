@@ -10,6 +10,7 @@ public class CorrespodingRestControllerAdvice {
 	
 	@ExceptionHandler(Exception.class)
 	public ResponseEntity<String> AllExpectionHandler(Exception e){
+		System.out.println();
 		return new ResponseEntity<String>(e.getMessage(),HttpStatus.BAD_REQUEST);
 	}
 
